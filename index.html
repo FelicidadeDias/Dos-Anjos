@@ -18,14 +18,24 @@
     .section-label{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:10px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;margin-bottom:18px}.section-label:after{content:"";height:1px;flex:1;background:var(--line)}
     .tracks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding-bottom:70px}.track{min-width:0;background:linear-gradient(145deg,#171311,#100e0d);border:1px solid rgba(255,255,255,.08);transition:border-color .2s,transform .2s}.track:hover{border-color:var(--line);transform:translateY(-3px)}.cover{position:relative;aspect-ratio:1.45/1;overflow:hidden;background:radial-gradient(circle at 75% 22%,rgba(196,91,51,.3),transparent 32%),linear-gradient(135deg,#2a1713,#0b0908 72%);display:flex;align-items:center;justify-content:center}.cover:before,.cover:after{content:"";position:absolute;border:1px solid rgba(216,177,106,.24);border-radius:50%;width:70%;aspect-ratio:1}.cover:after{width:48%;border-color:rgba(216,177,106,.13)}.cover-mark{position:relative;z-index:1;font:500 clamp(36px,5vw,64px)/1 Manrope,sans-serif;color:rgba(240,212,154,.9);letter-spacing:-.1em;text-shadow:0 4px 25px #000}.cover-num{position:absolute;left:18px;top:16px;color:#d6b26c;font-size:10px;letter-spacing:.2em}.cover-tag{position:absolute;right:16px;bottom:14px;color:#c5b8a7;font-size:9px;letter-spacing:.18em;text-transform:uppercase}.track-body{padding:20px}.track-type{color:var(--gold);font-size:9px;text-transform:uppercase;letter-spacing:.22em}.track h3{font:600 18px/1.35 Manrope,sans-serif;margin:9px 0 10px}.track p{color:var(--muted);font-size:12px;min-height:58px;margin:0 0 18px}.track-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.play-btn{border:0;background:var(--gold);color:#17100a;padding:10px 14px;font-size:12px;font-weight:800;cursor:pointer;border-radius:2px}.play-btn:hover{background:var(--gold2)}.share-btn{border:1px solid #46362b;background:transparent;color:#e7d8c4;padding:9px 12px;font-size:12px;cursor:pointer;border-radius:2px}.audio-wrap{margin-top:14px}.audio-wrap audio{width:100%;height:36px;display:block}.audio-note{font-size:10px;color:#857b70;margin-top:7px}
     .about{position:relative;isolation:isolate;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:58px 0;background:#100b09 url("banner.png") center 48%/cover no-repeat}.about:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(8,7,6,.94),rgba(8,7,6,.78) 55%,rgba(8,7,6,.88)),linear-gradient(0deg,rgba(8,7,6,.4),rgba(8,7,6,.4))}.about-inner{display:grid;grid-template-columns:1fr 1.5fr;gap:40px;align-items:center}.about h2{font:600 28px/1.2 Manrope,sans-serif;margin:8px 0}.about p{font-size:14px;color:var(--muted);margin:0;max-width:650px}.contact{padding:54px 0;text-align:center}.contact h2{font:600 clamp(25px,4vw,36px)/1.2 Manrope,sans-serif;margin:8px 0 12px}.contact p{color:var(--muted);font-size:14px;margin:0 auto 22px;max-width:540px}.contact-btn{display:inline-block;background:#6d2928;color:white;padding:13px 21px;border:1px solid #8a3934;font-size:13px;font-weight:700;border-radius:3px}.contact-btn:hover{background:#833331}.footer{border-top:1px solid rgba(255,255,255,.07);padding:22px 0;color:#827970;font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.empty{grid-column:1/-1;border:1px dashed #40332a;padding:35px;text-align:center;color:var(--muted);font-size:13px}.hidden{display:none!important}
-    @media(max-width:760px){.wrap{width:min(100% - 28px,var(--max))}.topbar{height:65px}.brand{font-size:11px;letter-spacing:.12em}.brand img{width:34px;height:34px}.nav{gap:14px;font-size:12px}.nav .nav-cta{padding:8px 10px}.nav a:not(.nav-cta){display:none}.banner{min-height:180px}.banner-img{min-height:180px}.intro{padding-top:38px;align-items:stretch;flex-direction:column}.search{width:100%}.tracks{grid-template-columns:1fr;gap:14px;padding-bottom:48px}.track{display:grid;grid-template-columns:38% 1fr}.cover{aspect-ratio:auto;min-height:100%}.track-body{padding:16px}.track h3{font-size:16px}.track p{min-height:0;margin-bottom:14px}.about-inner{grid-template-columns:1fr;gap:14px}.contact{padding:42px 0}}
+
+    .gallery-section{padding:58px 0 68px}
+    .gallery-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:24px}
+    .gallery-heading h2{font:600 clamp(26px,3.6vw,40px)/1.2 Manrope,sans-serif;margin:8px 0 0}
+    .gallery-heading p{color:var(--muted);font-size:14px;max-width:380px;margin:0}
+    .photo-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .artist-photo{position:relative;display:block;overflow:hidden;aspect-ratio:4/5;background:var(--panel);border:1px solid var(--line)}
+    .artist-photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease,filter .35s ease}
+    .artist-photo:hover img{transform:scale(1.04);filter:brightness(.78)}
+    .artist-photo span{position:absolute;left:0;right:0;bottom:0;padding:36px 18px 16px;color:#fff;font-size:12px;letter-spacing:.08em;background:linear-gradient(transparent,rgba(0,0,0,.82))}
+    @media(max-width:760px){.wrap{width:min(100% - 28px,var(--max))}.topbar{height:65px}.brand{font-size:11px;letter-spacing:.12em}.brand img{width:34px;height:34px}.nav{gap:14px;font-size:12px}.nav .nav-cta{padding:8px 10px}.nav a:not(.nav-cta){display:none}.banner{min-height:180px}.banner-img{min-height:180px}.intro{padding-top:38px;align-items:stretch;flex-direction:column}.search{width:100%}.tracks{grid-template-columns:1fr;gap:14px;padding-bottom:48px}.gallery-section{padding:42px 0 48px}.gallery-heading{align-items:start;flex-direction:column;gap:10px}.photo-gallery{grid-template-columns:1fr;gap:14px}.artist-photo{aspect-ratio:4/3}.track{display:grid;grid-template-columns:38% 1fr}.cover{aspect-ratio:auto;min-height:100%}.track-body{padding:16px}.track h3{font-size:16px}.track p{min-height:0;margin-bottom:14px}.about-inner{grid-template-columns:1fr;gap:14px}.contact{padding:42px 0}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
   </style>
 </head>
 <body>
   <header class="wrap topbar">
     <a class="brand" href="#" aria-label="Manuel Dos Anjos — início"><img src="logo.png" alt="" onerror="this.style.display='none'"><span>MANUEL DOS ANJOS</span></a>
-    <nav class="nav" aria-label="Navegação principal"><a href="#musicas">Músicas</a><a href="#sobre">Sobre</a><a class="nav-cta" href="#contacto">Contacto</a></nav>
+    <nav class="nav" aria-label="Navegação principal"><a href="#musicas">Músicas</a><a href="#sobre">Sobre</a><a href="#fotos">Fotos</a><a class="nav-cta" href="#contacto">Contacto</a></nav>
   </header>
   <main>
     <section class="wrap hero" aria-label="Banner do artista">
@@ -51,6 +61,18 @@
       </div>
     </section>
     <section class="about" id="sobre"><div class="wrap about-inner"><div><span class="eyebrow">A identidade</span><h2>Manuel Dos Anjos</h2></div><p>Uma casa digital para a música de Manuel Dos Anjos — um espaço para descobrir faixas, ouvir lançamentos e partilhar cada som. Volte para acompanhar as próximas novidades.</p></div></section>
+
+    <section class="wrap gallery-section" id="fotos" aria-labelledby="gallery-title">
+      <div class="gallery-heading">
+        <div><span class="eyebrow">Momentos do artista</span><h2 id="gallery-title">Galeria de fotos</h2></div>
+        <p>Conheça um pouco mais de Manuel Dos Anjos para além da música.</p>
+      </div>
+      <div class="photo-gallery">
+        <a class="artist-photo" href="1.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ver foto 1 em tamanho completo"><img src="1.jpg" alt="Manuel Dos Anjos — fotografia 1" loading="lazy"><span>Manuel Dos Anjos</span></a>
+        <a class="artist-photo" href="2.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ver foto 2 em tamanho completo"><img src="2.jpg" alt="Manuel Dos Anjos — fotografia 2" loading="lazy"><span>Nos bastidores</span></a>
+        <a class="artist-photo" href="3.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ver foto 3 em tamanho completo"><img src="3.jpg" alt="Manuel Dos Anjos — fotografia 3" loading="lazy"><span>Retratos do artista</span></a>
+      </div>
+    </section>
     <section class="wrap contact" id="contacto"><span class="eyebrow">Vamos manter contacto</span><h2>Gostou de uma música?</h2><p>Partilhe a sua faixa favorita ou entre em contacto para novidades, atuações e colaborações.</p><a class="contact-btn" id="whatsapp" href="https://wa.me/244931352243?text=Ol%C3%A1%20Manuel%20Dos%20Anjos!%20Quero%20saber%20mais%20sobre%20a%20tua%20m%C3%BAsica." target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp ↗</a></section>
   </main>
   <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year"></span> Manuel Dos Anjos. Todos os direitos reservados.</span><span>Música é a minha voz.</span></div></footer>
