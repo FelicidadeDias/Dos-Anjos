@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090807">
+  <meta name="description" content="Descubra e ouça a música de Manuel Dos Anjos. Singles, lançamentos e novidades num só lugar.">
+  <title>Manuel Dos Anjos — Música oficial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#090807;--panel:#12100f;--panel2:#191311;--gold:#d8b16a;--gold2:#f0d49a;--red:#6f2425;--text:#f6f1e9;--muted:#a9a19a;--line:rgba(216,177,106,.19);--max:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button,input{font:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .topbar{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.07);gap:20px}.brand{display:flex;align-items:center;gap:12px;font-family:Manrope,sans-serif;font-size:14px;font-weight:800;letter-spacing:.18em}.brand img{width:42px;height:42px;object-fit:contain}.nav{display:flex;align-items:center;gap:30px;color:#d4cdc4;font-size:13px}.nav a:hover{color:var(--gold2)}.nav-cta{border:1px solid var(--line);padding:10px 16px;border-radius:3px;color:var(--gold2)}
+    .hero{padding:24px 0 0}.banner{position:relative;overflow:hidden;border:1px solid var(--line);background:linear-gradient(120deg,#17100c,#090807 60%,#26120e);min-height:260px;display:flex;align-items:center}.banner-img{display:block;width:100%;height:auto;min-height:260px;max-height:430px;object-fit:cover;object-position:center}.banner-fallback{padding:58px 7%;width:100%;background:radial-gradient(ellipse at 82% 20%,rgba(153,66,29,.25),transparent 35%),linear-gradient(110deg,#0a0908,#21140f);}.eyebrow{color:var(--gold);font-size:10px;letter-spacing:.32em;text-transform:uppercase;font-weight:700}.banner-fallback h1{font:500 clamp(34px,5vw,62px)/1.08 Manrope,sans-serif;letter-spacing:.04em;margin:14px 0}.banner-fallback p{color:#c9bfb2;letter-spacing:.12em;font-size:12px}
+    .intro{display:flex;align-items:end;justify-content:space-between;gap:24px;padding:54px 0 25px}.intro h2{font:600 clamp(26px,3.6vw,40px)/1.2 Manrope,sans-serif;margin:8px 0}.intro p{margin:0;color:var(--muted);max-width:530px;font-size:14px}.search{width:min(290px,100%);border:1px solid #39302a;background:#100e0c;padding:13px 15px;color:var(--text);outline:none;border-radius:3px}.search:focus{border-color:var(--gold)}
+    .section-label{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:10px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;margin-bottom:18px}.section-label:after{content:"";height:1px;flex:1;background:var(--line)}
+    .tracks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding-bottom:70px}.track{min-width:0;background:linear-gradient(145deg,#171311,#100e0d);border:1px solid rgba(255,255,255,.08);transition:border-color .2s,transform .2s}.track:hover{border-color:var(--line);transform:translateY(-3px)}.cover{position:relative;aspect-ratio:1.45/1;overflow:hidden;background:radial-gradient(circle at 75% 22%,rgba(196,91,51,.3),transparent 32%),linear-gradient(135deg,#2a1713,#0b0908 72%);display:flex;align-items:center;justify-content:center}.cover:before,.cover:after{content:"";position:absolute;border:1px solid rgba(216,177,106,.24);border-radius:50%;width:70%;aspect-ratio:1}.cover:after{width:48%;border-color:rgba(216,177,106,.13)}.cover-mark{position:relative;z-index:1;font:500 clamp(36px,5vw,64px)/1 Manrope,sans-serif;color:rgba(240,212,154,.9);letter-spacing:-.1em;text-shadow:0 4px 25px #000}.cover-num{position:absolute;left:18px;top:16px;color:#d6b26c;font-size:10px;letter-spacing:.2em}.cover-tag{position:absolute;right:16px;bottom:14px;color:#c5b8a7;font-size:9px;letter-spacing:.18em;text-transform:uppercase}.track-body{padding:20px}.track-type{color:var(--gold);font-size:9px;text-transform:uppercase;letter-spacing:.22em}.track h3{font:600 18px/1.35 Manrope,sans-serif;margin:9px 0 10px}.track p{color:var(--muted);font-size:12px;min-height:58px;margin:0 0 18px}.track-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.play-btn{border:0;background:var(--gold);color:#17100a;padding:10px 14px;font-size:12px;font-weight:800;cursor:pointer;border-radius:2px}.play-btn:hover{background:var(--gold2)}.share-btn{border:1px solid #46362b;background:transparent;color:#e7d8c4;padding:9px 12px;font-size:12px;cursor:pointer;border-radius:2px}.audio-wrap{margin-top:14px}.audio-wrap audio{width:100%;height:36px;display:block}.audio-note{font-size:10px;color:#857b70;margin-top:7px}
+    .about{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:42px 0;background:linear-gradient(100deg,rgba(111,36,37,.12),transparent 65%)}.about-inner{display:grid;grid-template-columns:1fr 1.5fr;gap:40px;align-items:center}.about h2{font:600 28px/1.2 Manrope,sans-serif;margin:8px 0}.about p{font-size:14px;color:var(--muted);margin:0;max-width:650px}.contact{padding:54px 0;text-align:center}.contact h2{font:600 clamp(25px,4vw,36px)/1.2 Manrope,sans-serif;margin:8px 0 12px}.contact p{color:var(--muted);font-size:14px;margin:0 auto 22px;max-width:540px}.contact-btn{display:inline-block;background:#6d2928;color:white;padding:13px 21px;border:1px solid #8a3934;font-size:13px;font-weight:700;border-radius:3px}.contact-btn:hover{background:#833331}.footer{border-top:1px solid rgba(255,255,255,.07);padding:22px 0;color:#827970;font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.empty{grid-column:1/-1;border:1px dashed #40332a;padding:35px;text-align:center;color:var(--muted);font-size:13px}.hidden{display:none!important}
+    @media(max-width:760px){.wrap{width:min(100% - 28px,var(--max))}.topbar{height:65px}.brand{font-size:11px;letter-spacing:.12em}.brand img{width:34px;height:34px}.nav{gap:14px;font-size:12px}.nav .nav-cta{padding:8px 10px}.nav a:not(.nav-cta){display:none}.banner{min-height:180px}.banner-img{min-height:180px}.intro{padding-top:38px;align-items:stretch;flex-direction:column}.search{width:100%}.tracks{grid-template-columns:1fr;gap:14px;padding-bottom:48px}.track{display:grid;grid-template-columns:38% 1fr}.cover{aspect-ratio:auto;min-height:100%}.track-body{padding:16px}.track h3{font-size:16px}.track p{min-height:0;margin-bottom:14px}.about-inner{grid-template-columns:1fr;gap:14px}.contact{padding:42px 0}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="wrap topbar">
+    <a class="brand" href="#" aria-label="Manuel Dos Anjos — início"><img src="logo.png" alt="" onerror="this.style.display='none'"><span>MANUEL DOS ANJOS</span></a>
+    <nav class="nav" aria-label="Navegação principal"><a href="#musicas">Músicas</a><a href="#sobre">Sobre</a><a class="nav-cta" href="#contacto">Contacto</a></nav>
+  </header>
+  <main>
+    <section class="wrap hero" aria-label="Banner do artista">
+      <img class="banner-img" src="banner.png" alt="Manuel Dos Anjos — Música é a minha voz" onerror="this.outerHTML='<div class=&quot;banner-fallback&quot;><span class=&quot;eyebrow&quot;>Artista independente</span><h1>MANUEL DOS ANJOS</h1><p>MÚSICA É A MINHA VOZ</p></div>'">
+    </section>
+    <section class="wrap" id="musicas">
+      <div class="intro"><div><span class="eyebrow">Ouça. Descubra. Sinta.</span><h2>Música, sem distrações.</h2><p>Explore os sons de Manuel Dos Anjos. Escolha uma faixa e ouça diretamente nesta página.</p></div><input class="search" id="search" type="search" placeholder="Pesquisar uma música..." aria-label="Pesquisar músicas"></div>
+      <div class="section-label">Lançamentos e músicas</div>
+      <div class="tracks" id="tracks">
+        <article class="track" data-title="Tropa treinado" data-file="musicas/Dos Anjos-Tropa treinado.mp3">
+          <div class="cover"><span class="cover-num">01 / SINGLE</span><span class="cover-mark">DA</span><span class="cover-tag">Manuel Dos Anjos</span></div>
+          <div class="track-body"><span class="track-type">Single</span><h3>Tropa Treinado</h3><p>Uma faixa com atitude, união e confiança. A energia de quem conhece o seu caminho e segue firme ao lado dos seus.</p><div class="track-actions"><button class="play-btn" type="button">▶ Ouvir música</button><button class="share-btn" type="button">Partilhar</button></div><div class="audio-wrap hidden"><audio controls preload="none"></audio><div class="audio-note">O áudio só começa a carregar quando pedir para ouvir.</div></div></div>
+        </article>
+        <article class="track" data-title="A Última Vez" data-file="musicas/Dos Anjos - A Ultima Vez (Prod Djagabany).mp3">
+          <div class="cover"><span class="cover-num">02 / SINGLE</span><span class="cover-mark">DA</span><span class="cover-tag">Manuel Dos Anjos</span></div>
+          <div class="track-body"><span class="track-type">Single</span><h3>A Última Vez</h3><p>Uma canção sobre um momento decisivo, sentimentos intensos e a escolha de encerrar um capítulo que já não pode continuar.</p><div class="track-actions"><button class="play-btn" type="button">▶ Ouvir música</button><button class="share-btn" type="button">Partilhar</button></div><div class="audio-wrap hidden"><audio controls preload="none"></audio><div class="audio-note">O áudio só começa a carregar quando pedir para ouvir.</div></div></div>
+        </article>
+        <article class="track" data-title="Teu Sabor" data-file="musicas/Dos Anjos ft Desney-Teu Sabor.mp3">
+          <div class="cover"><span class="cover-num">03 / COLABORAÇÃO</span><span class="cover-mark">DA</span><span class="cover-tag">feat. Desney</span></div>
+          <div class="track-body"><span class="track-type">Colaboração · feat. Desney</span><h3>Teu Sabor</h3><p>Uma música de vibração romântica, feita para celebrar a atração, a química e a memória especial de alguém.</p><div class="track-actions"><button class="play-btn" type="button">▶ Ouvir música</button><button class="share-btn" type="button">Partilhar</button></div><div class="audio-wrap hidden"><audio controls preload="none"></audio><div class="audio-note">O áudio só começa a carregar quando pedir para ouvir.</div></div></div>
+        </article>
+        <div id="empty" class="empty hidden">Não encontrámos músicas com esse nome.</div>
+      </div>
+    </section>
+    <section class="about" id="sobre"><div class="wrap about-inner"><div><span class="eyebrow">A identidade</span><h2>Manuel Dos Anjos</h2></div><p>Uma casa digital para a música de Manuel Dos Anjos — um espaço para descobrir faixas, ouvir lançamentos e partilhar cada som. Volte para acompanhar as próximas novidades.</p></div></section>
+    <section class="wrap contact" id="contacto"><span class="eyebrow">Vamos manter contacto</span><h2>Gostou de uma música?</h2><p>Partilhe a sua faixa favorita ou entre em contacto para novidades, atuações e colaborações.</p><a class="contact-btn" id="whatsapp" href="https://wa.me/?text=Olá%20Manuel%20Dos%20Anjos!%20Quero%20saber%20mais%20sobre%20a%20tua%20música." target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp ↗</a></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year"></span> Manuel Dos Anjos. Todos os direitos reservados.</span><span>Música é a minha voz.</span></div></footer>
+  <script>
+    const cards=[...document.querySelectorAll('.track')];
+    const search=document.getElementById('search');
+    document.getElementById('year').textContent=new Date().getFullYear();
+    cards.forEach(card=>{
+      const play=card.querySelector('.play-btn');
+      const share=card.querySelector('.share-btn');
+      const wrap=card.querySelector('.audio-wrap');
+      const audio=card.querySelector('audio');
+      play.addEventListener('click',()=>{
+        if(!audio.src){audio.src=encodeURI(card.dataset.file);audio.load();}
+        wrap.classList.remove('hidden');
+        play.textContent='♪ Reprodutor aberto';
+        audio.play().catch(()=>{});
+      });
+      share.addEventListener('click',async()=>{
+        const url=new URL(location.href);url.hash='musicas';
+        const text=card.dataset.title+' — Manuel Dos Anjos';
+        try{if(navigator.share)await navigator.share({title:text,text:'Descobre esta música de Manuel Dos Anjos.',url:url.href});else{await navigator.clipboard.writeText(url.href);share.textContent='Link copiado';setTimeout(()=>share.textContent='Partilhar',1800)}}catch(e){}
+      });
+    });
+    search.addEventListener('input',()=>{
+      const q=search.value.trim().toLocaleLowerCase('pt');
+      let visible=0;
+      cards.forEach(card=>{const show=card.dataset.title.toLocaleLowerCase('pt').includes(q)||card.innerText.toLocaleLowerCase('pt').includes(q);card.classList.toggle('hidden',!show);if(show)visible++});
+      document.getElementById('empty').classList.toggle('hidden',visible!==0);
+    });
+  </script>
+</body>
+</html>
